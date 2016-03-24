@@ -1,34 +1,46 @@
 <!doctype html>
 <!-- Dommert Inc 2016 -->
 <!-- BootstrapUI-App Template -->
-<html ng-app="App">
+<html ng-app>
 
 <head>
   <!-- Angular  1.2.5 -->
     <script src="vendor/angular/angular.min.js"></script>
     <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="vendor/angular-animate/angular-animate.min.js"></script>
+    <script src="vendor/angular-touch/angular-touch.min.js"></script>
   <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
   <!-- Bootstrap UI -->
     <script src="vendor/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+  <!-- Application -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/routes.js"></script>        
   </head>
   
-  <body>
-    <header class="row">
-    </header>
+  <body class="container row">
 
-    <section id="middle" class="row">
-      <div>
-        <label>Name:</label>
-        <input type="text" ng-model="yourName" placeholder="Enter a name here">
-        <hr>
-        <h1>Hello {{yourName}}!</h1>
-      </div>
-    </section>
+    <div id="frameBox" class="col-sm-10 col-center col-sm-offset-2">
+      <header class="row">
+        <div id="headerBox" class="col-sm-12">
+          <h1> Welcome!</h1>
+        </div>
+      </header>
 
-    <footer class="row">
-    
-    </footer>
+      <section id="middle" class="row">
+        <div id="middleBox" class="col-sm-12">
+          <label>Name:</label>
+          <input type="text" ng-model="yourName" placeholder="Enter a name here">
+          <hr>
+          <h1>Hello {{yourName}}!</h1>
+          <p><button type="button" class="btn btn-success">Works</button></p>
+        </div>
+      </section>
+
+      <footer class="row">
+      <div id="footBox" class="col-sm-12"></div>
+      </footer>
+    </div>    
   </body>
 </html>
 
