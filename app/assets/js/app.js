@@ -1,4 +1,4 @@
-var webApp = angular.module('webApp', ['ui.bootstrap', 'ngRoute']);
+var webApp = angular.module('webApp', ['ui.bootstrap', 'ui.router']);
 
 webApp.controller('mainCtrl',
 	function($scope){
