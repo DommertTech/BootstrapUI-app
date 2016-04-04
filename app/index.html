@@ -11,10 +11,10 @@
   <!-- Bootstrap 3.3.6 -->
     <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.min.css">
   <!-- Bootstrap UI -->
-    <script src="vendor/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="vendor/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
      <!-- Loading Bar -->
- <link rel='stylesheet' href='vendor/angular-loading-bar/loading-bar.css' type='text/css' media='all' />
- <script type='text/javascript' src='vendor/angular-loading-bar/loading-bar.js'></script>
+    <link rel='stylesheet' href='vendor/angular-loading-bar/loading-bar.css' type='text/css' media='all' />
+    <script type='text/javascript' src='vendor/angular-loading-bar/loading-bar.js'></script>
 
   <!-- Application -->
     <script src="assets/js/app.js"></script>
@@ -22,9 +22,10 @@
   </head>
 
   <body>
-   <div id="container" class="row" ng-controller="mainCtrl">
+  <div id="container" class="container-fluid">
+    <div class="row" ng-controller="mainCtrl">
     
-    <div id="topNav" ng-include="'templates/partials/nav.html'"></div>
+    <div id="topNav" ng-include="'templates/partials/newnav.html'"></div>
     <div id="frameBox" class="col-sm-10 col-center col-sm-offset-2">
       <header class="row">
         <div id="headerBox" class="col-sm-12">
@@ -40,6 +41,7 @@
         </footer>
       </div>    
     </div>
+  </div>
   </body>
 </html>
 
