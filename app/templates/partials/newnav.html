@@ -1,3 +1,4 @@
+<script>document.write('<base href="' + document.location + '" />');</script>
  <style>
 
     div.navbar-collapse.collapse {
@@ -16,7 +17,7 @@
     </style>
 
 
-  <div ng-controller="MainCtrl">
+  <div ng-controller="mainCtrl">
     <nav class="navbar navbar-default" role="navigation">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -56,7 +57,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Link</a></li>
           <li class="dropdown">
-            <a href="#" class="collapse dropdown-toggle" data-toggle="dropdown">ropdown <b class="caret"></b></a>
+            <a href="#" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" class="collapse dropdown-toggle" data-toggle="dropdown">ropdown <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="#">Action</a></li>
               <li><a href="#">Another action</a></li>
